@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+
+    <link rel="stylesheet" href="Project1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b7d9f60278.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+
+            background-color: lightcyan;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: lightcyan">
+        <div class="container">
+            <a class="navbar-brand" href="Project1.html">KusinaFilipino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#top">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Project1contactus.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Testing">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-2">
+                        <h2>Filipino Dishes</h2>
+                        <p>Filino taste will always be your favorite<br>Filipino taste will refresh your mind</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="d-flex justify-content-center" aria-label="Page navigation example">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item">
+                        <a class="page-link" href="Project1recipe.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="Project1recipe.html">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#top">2</a></li>
+                    <li class="page-item"><a class="page-link" href="Project1recipepg3.html">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="Project1recipepg3.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="https://www.lutongpinoyrecipe.com/wp-content/uploads/2020/12/lutong-pinoy-beef-pares-640x360.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Beef Pares</h3>
+                            <p class="lead">Beef Pares are cubed beef briskets cooked with spices and tenderized to
+                                perfection. The aroma of this dish alone is enticing. The taste is captivating. You will
+                                surely ask for more after tasting it.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#BeefPares">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="http://images.summitmedia-digital.com/yummyph/images/2017/11/21/chicken-bicol-express.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Bicol Express</h3>
+                            <p class="lead">The mild sweetness of coconut milk brings a sense of delight to the sharp
+                                notes of chili pepper and bagoong in the classic Bicol Express recipe. this has helped
+                                make it arguably one of the most popular Filipino dishes.
+
+                            </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#BicolExpress">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="https://images.summitmedia-digital.com/yummyph/images/2019/11/30/milas-lechon-2019.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Lechon</h3>
+                            <p class="lead">The name “lechon” is said to have come from the Spanish word “lechona” which
+                                means “suckling pig.” This indicates that the first version of this dish is what is
+                                locally called lechon de leche.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#Lechon">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row"></div>
+            <br>
+            <br>
+            <div class="row mb-5">
+                <div class="col-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="http://images.summitmedia-digital.com/yummyph/images/2017/05/15/crispy-pata-three-sauces.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Crispy Pata</h3>
+                            <p class="lead">Crispy Pata or crispy pork leg is a popular Filipino pork dish. This dish
+                                can be eaten as a main dish along with rice and atcharang papaya. People also consume it
+                                as beer food or pulutan.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#CrispyPata">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="http://images.summitmedia-digital.com/yummyph/images/2020/02/17/skinlessviganlongganisarecipe2.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Skinless Longganisa</h3>
+                            <p class="lead">Skinless longganisa is a version of the native Filipino sausage usually made
+                                of ground pork, garlic, and spices.It is also known as naked sausage. Filipino
+                                Longganisa can either be sweet or garlicky.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#SkinlessLongganisa">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="https://images.summitmedia-digital.com/yummyph/images/2022/04/07/filipinoporkbbqrecipewithsriracha.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Pork Barbecue</h3>
+                            <p class="lead">Pork barbecue in bamboo skewers is what Filipino Style Pork BBQ is all
+                                about. It is composed of thinly sliced pork pieces that are marinated in a special
+                                mixture of seasonings and spices.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#PorkBarbecue">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row"></div>
+            <div class="row mb-5">
+                <div class="col-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="http://images.summitmedia-digital.com/yummyph/images/2021/12/03/lumpiangshanghaiplatter.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Lumpiang Shanghai</h3>
+                            <p class="lead">Lumpia or Lumpiang Shanghai is a type of Filipino egg roll. The basic
+                                filling is composed of ground pork along with minced onions, carrots, and seasonings
+                                such as salt and ground black pepper.It is often served as an appetizer or snack.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#LumpiangShanghai">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="http://images.summitmedia-digital.com/yummyph/images/2019/08/30/spicybeefbulalorecipe.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Bulalo</h3>
+                            <p class="lead">It’s a well known fact that Filipinos love stew and soup dishes. From the
+                                sour sinigang to the sweet tinola, there’s guaranteed to be a soup dish for every flavor
+                                palate preference all great to sip and enjoy, especially during long, cool nights.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#Bulalo">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="http://images.summitmedia-digital.com/sap/images/2020/08/05/knorr-ararat-yummy-main-image-1596613576.jpg"
+                                    class="img-fluid" alt="">
+                            </div>
+                            <h3 class="card-title">Tinola</h3>
+                            <p class="lead">Chicken Tinola is a Filipino soup dish. It involves cooking chicken pieces
+                                in ginger broth. It is a popular cold weather dish. This Filipino Chicken Soup is best
+                                enjoyed with fish sauce as dipping sauce, and a cup of warm white rice.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#Tinola">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!--Beef pares Dish Start-->
+    <div class="modal fade modal-xl" id="BeefPares" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="BeefPares">Beef Pares Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Heat oil in a cooking pot or pressure cooker. Saute onion, garlic, and
+                                            ginger.</li>
+                                        <li>Add the beef once onion softens. Cook until light brown.</li>
+                                        <li>Pour soy sauce and water. Stir.</li>
+                                        <li>Add star anise. Cover the pressure cooker and pressure cook for 15 minutes.
+                                        </li>
+                                        <li>Add brown sugar and season with salt and ground black pepper. Cook for 8 to
+                                            10 minutes more or until the sauce reduces a bit.</li>
+                                        <li>Top with chopped scallions and serve with sinangag and beef stock. Share and
+                                            enjoy.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li> ½ lbs. beef cubed</li>
+                                    <li>2 pieces star anise</li>
+                                    <li>¼ cup brown sugar</li>
+                                    <li>½ cup scallions chopped</li>
+                                    <li>2 thumbs ginger minced</li>
+                                    <li>6 tablespoons soy sauce</li>
+                                    <li>1 piece onion chopped</li>
+                                    <li>5 cloves garlic crushed</li>
+                                    <li>2 ½ cups water</li>
+                                    <li>3 tablespoons cooking oil</li>
+                                    <li>Salt and ground black pepper to taste</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Beef Pares Dish End-->
+
+    <!--Bicol Express Dish Start-->
+    <div class="modal fade modal-xl" id="BicolExpress" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="BicolExpress">Bicol Express Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Combine ginger, garlic, onion, Thai chili pepper, pork, and coconut milk in
+                                            a pan. Mix well. Cover the pan and turn the heat to on. Let the mixture
+                                            boil.</li>
+                                        <li>Remove the cover. Stir. Add half of the bagoong and pour around 1 cup of
+                                            coconut cream and a cup of water. Stir and adjust the heat to low. Cook
+                                            until the sauce reduces to a quarter (around 50 minutes).</li>
+                                        <li>Add the remaining coconut cream and bagoong alamang (as needed). Also add
+                                            the Serrano peppers. Continue cooking in low heat until the sauce thickens
+                                            (around)</li>
+                                        <li>Transfer to a serving plate and serve with warm rice.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>2 lbs. pork belly sliced into strips</li>
+                                    <li>2 cups coconut milk</li>
+                                    <li>2 cups coconut cream</li>
+                                    <li>1/2 cup shrimp paste bagoong alamang</li>
+                                    <li>4 cloves garlic crushed</li>
+                                    <li>6 pieces Thai chili pepper chopped</li>
+                                    <li>1 thumb ginger minced</li>
+                                    <li>1 piece onion chopped</li>
+                                    <li>1 pieces Serrano pepper sliced</li>
+                                    <li>1 cup water optional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bicol Express End-->
+
+    <!--Lechon Dish Start-->
+
+    <div class="modal fade modal-xl" id="Lechon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Lechon">Lechon Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Place garlic, cilantro, oregano, salt, pepper, cumin, and 1/2 cup of the oil
+                                            in a blender. Slowly add orange and lime juice, and pulse until smooth, 10
+                                            to 12 times. Remove 1 cup marinade mixture, and reserve for later use.</li>
+                                        <li>Place pig in a container that is large enough to accommodate its size.
+                                            Thoroughly coat with remaining marinade mixture, rubbing all over pig. Cover
+                                            container, and chill 8 to 24 hours, basting occasionally.</li>
+                                        <li>Preheat oven to 275°F. Place a wire rack in a large, aluminum foil-lined
+                                            rimmed baking sheet or roasting pan. Remove pig from marinade, and place on
+                                            rack, discarding marinade.</li>
+                                        <li>Inject pig all over with reserved 1 cup marinade mixture, and rub with
+                                            remaining 1 cup oil. Roast pig in preheated oven until a meat thermometer
+                                            inserted into the shoulder joint close to the head registers 160°F, about 4
+                                            hours, rotating pan, if necessary. Increase oven temperature to 425°F, and
+                                            roast until skin is golden brown and crispy, about 1 hour. Let rest 20
+                                            minutes. Serve immediately.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>20 garlic cloves</li>
+                                    <li>1 bunch cilantro, trimmed</li>
+                                    <li>1 cup loosely packed fresh oregano leaves</li>
+                                    <li>5 tablespoons kosher salt</li>
+                                    <li>2 tablespoons black pepper</li>
+                                    <li>2 tablespoons ground cumin</li>
+                                    <li>1 ½ cups olive oil, divided</li>
+                                    <li>4 cups fresh orange juice (about 8 oranges)</li>
+                                    <li>4 cups fresh lime juice (about 10 limes)</li>
+                                    <li>1 (15- to 18-lb.) whole suckling pig</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lechon Dish end-->
+
+    <!--Crispy Pata Dish Start-->
+    <div class="modal fade modal-xl" id="CrispyPata" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="CrispyPata">Crispy Pata Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Pour water in a cooking pot then let boil.</li>
+                                        <li>Put-in dried bay leaves, whole peppercorn, star anise, and 4 teaspoons of
+                                            salt.</li>
+                                        <li>Add the whole pig’s legs in the cooking pot then simmer until the leg
+                                            becomes tender (about 45 to 60 minutes).</li>
+                                        <li>Remove the tender leg from the cooking pot and set aside until the
+                                            temperature goes down.</li>
+                                        <li>Rub the leg with garlic powder, ground black pepper, and remaining salt. Let
+                                            stand for 15 minutes to absorb the rub.</li>
+                                        <li>Heat a clean large cooking pot (preferably with cover) and pour-in cooking
+                                            oil.</li>
+                                        <li>When the oil becomes hot, deep fry the rubbed pork leg. Continue cooking in
+                                            medium heat until one side becomes crispy, and then cautiously flip the leg
+                                            to crisp the other side. Note: Be extra careful in doing this procedure.
+                                        </li>
+                                        <li>Turn-off the heat; remove the crispy pork leg; and transfer it to a wide
+                                            serving plate.</li>
+                                        <li>Serve with atcharang papaya and soy sauce – vinegar dipping sauce.</li>
+                                        <li>Share and enjoy!</li>
+
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>1 piece whole pig leg cleaned</li>
+                                    <li>6 pieces dried bay leaves</li>
+                                    <li>2 tablespoons whole peppercorn</li>
+                                    <li>4 pieces star anise optional</li>
+                                    <li>6 teaspoons salt</li>
+                                    <li>2 teaspoons ground black pepper</li>
+                                    <li>2 teaspoons garlic powder</li>
+                                    <li>12 cups water</li>
+                                    <li>6 cups cooking oil</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Crispy Pata Dish end -->
+
+
+    <!-- Skinless Longganisa Dish Start-->
+    <div class="modal fade modal-xl" id="SkinlessLongganisa" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SkinlessLongganisa">Skinless Longganisa Recipe and Instructions
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Peel the skin off the garlic cloves. Crush thoroughly using mortar and
+                                            pestle. Mince the crushed garlic. Set aside.</li>
+                                        <li>In a large mixing bowl, combine ground pork along with all of the
+                                            ingredients. Mix well.</li>
+                                        <li>Cover the bowl. Refrigerate for 2 hours.
+                                        </li>
+                                        <li>Shape the longganisa by laying a sheet of wax paper on a flat surface. Scoop
+                                            around 3 tablespoons of mixture and put over the wax paper. Fold the wax
+                                            paper from top to down until the mixture covered. Hold the edge of the paper
+                                            with your fingers and then slide the card towards the mixture. Push a bit
+                                            more until a sausage shape is formed. Do this step until the entire mixture
+                                            is consumed.</li>
+                                        <li>Refrigerate overnight.</li>
+                                        <li>Cook and serve for breakfast. Share and enjoy!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>1 ¾ lbs. ground pork</li>
+                                    <li>9 tablespoons dark brown sugar</li>
+                                    <li>1 tablespoon smoked paprika</li>
+                                    <li>3 tablespoons vegetable oil</li>
+                                    <li>1 ¼ tablespoons coarse salt</li>
+                                    <li>1 teaspoon ground black pepper</li>
+                                    <li>2 head garlic</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skinless Longganisa End-->
+
+
+    <!-- Pork Barbecue Start-->
+    <div class="modal fade modal-xl" id="PorkBarbecue" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="PorkBarbecue">Pork Barbecue Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Arrange the pork slices in a large bowl.</li>
+                                        <li>Add all the marinade ingredients. Mix well. Cover the bowl and marinate for
+                                            at least 3 hours. Note: I strongly suggest marinating overnight for best
+                                            results.</li>
+                                        <li>Fasten the marinated pork together using bamboo skewers.</li>
+                                        <li>Heat-up the grill. Start to grill your Filipino Style pork BBQ for 3 to 5
+                                            minutes per side until the meat is thoroughly cooked. Make sure to always
+                                            baste the BBQ when flipping it over. Note: the basting sauce ingredients are
+                                            the same as the marinade ingredients minus the lemon soda.</li>
+                                        <li>Serve with spicy vinegar.</li>
+                                        <li>Share and enjoy!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>4 lbs. pork shoulder sliced into thin pieces</li>
+                                    <li>¾ cup soy sauce</li>
+                                    <li>½ cup juice extracted from calamansi or lemon</li>
+                                    <li>¾ cup banana ketchup</li>
+                                    <li>4 tablespoons dark brown sugar</li>
+                                    <li>2 tablespoons garlic powder</li>
+                                    <li>1 teaspoon ground black pepper</li>
+                                    <li>2 teaspoons salt</li>
+                                    <li>1 ½ cups lemon or lime soda</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pork Barbecue End -->
+
+    <!-- Lumpiang Shanghai Start -->
+    <div class="modal fade modal-xl" id="LumpiangShanghai" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LumpiangShanghai">Lumpiang Shanghai Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Combine all filling ingredients in a bowl. Mix well.</li>
+                                        <li>Scoop around 1 to 1 1/2 tablespoons of filling and place over a piece of
+                                            lumpia wrapper. Spread the filling and then fold both sides of the wrapper.
+                                            Fold the bottom. Brush beaten egg mixture on the top end of the wrapper.
+                                            Roll-up until completely wrapped. Perform the same step until all mixture
+                                            are consumed.</li>
+                                        <li>Heat oil in a cooking pot. Deep fry lumpia in medium heat until it floats.
+                                        </li>
+                                        <li>Remove from the pot. Let excess oil drip. Serve. Share and enjoy</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>50 pieces lumpia wrapper</li>
+                                    <li>3 cups cooking oil</li>
+                                    <li>1 1/2 lbs ground pork</li>
+                                    <li>2 pieces onion minced</li>
+                                    <li>2 pieces carrots minced</li>
+                                    <li>1 1/2 teaspoons garlic powder</li>
+                                    <li>1/2 teaspoon ground black pepper</li>
+                                    <li>1/2 cup parsley chopped</li>
+                                    <li>1 1/2 teaspoons salt</li>
+                                    <li>1 tablespoon sesame oil</li>
+                                    <li>2 eggs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lumpiang Shanghai End -->
+
+    <!-- Bulalo Start -->
+    <div class="modal fade modal-xl" id="Bulalo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Bulalo">Bulalo Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>In a big cooking pot, pour in water and bring to a boil</li>
+                                        <li>Put-in the beef shank followed by the onion and whole pepper corn then
+                                            simmer for 1.5 hours (30 mins if using a pressure cooker) or until meat is
+                                            tender.</li>
+                                        <li>Add the corn and simmer for another 10 minutes</li>
+                                        <li>Add the fish sauce,cabbage, pechay, and green onion (onion leeks)</li>
+                                        <li>Serve hot. Share and Enjoy!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>2 lbs beef shank</li>
+                                    <li>½ cabbage whole leaf individually detached</li>
+                                    <li>1 bundle bok choy</li>
+                                    <li>2 cobs corn each cut into 3 parts</li>
+                                    <li>2 Tablespoons whole peppercorn</li>
+                                    <li>1/2 cup green onions cut unto 1 1/2 inch pieces</li>
+                                    <li>1 onion</li>
+                                    <li>34 ounces water</li>
+                                    <li>fish sauce to taste optional</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bulalo End -->
+
+    <!-- Tinola Start-->
+    <div class="modal fade modal-xl" id="Tinola" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="Tinola">Tinola Recipe and Instructions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div>
+                                    <h2>Instructions</h2>
+                                    <ol>
+                                        <li>Sauté the garlic, onion, and ginger</li>
+                                        <li>Put-in the chicken and cook until color turns light brown</li>
+                                        <li>Add the fish sauce. Stir. Pour rice washing into the cooking pot. Let boil.
+                                            Cover the pot and simmer for 45 minutes. Note: add water if needed.</li>
+                                        <li>Add green papaya. Cook for 5 minutes</li>
+                                        <li>Add the hot pepper leaves or malunggay leaves. Stir and cook for 1 minute.
+                                        </li>
+                                        <li>Season with ground black pepper. Note you can also add fish sauce or salt if
+                                            needed.</li>
+                                        <li>Transfer to a serving bowl. Serve hot. Share and enjoy!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Ingredients</h2>
+                                <ul>
+                                    <li>1 whole chicken cut into serving pieces</li>
+                                    <li>36 ounces rice washing</li>
+                                    <li>1/2 piece green papaya cut into wedges</li>
+                                    <li>1 tablespoon garlic minced</li>
+                                    <li>1 piece onion chopped</li>
+                                    <li>1 thumb ginger cut into strips</li>
+                                    <li>2 tablespoon fish sauce</li>
+                                    <li>1 cup Hot pepper leaves</li>
+                                    <li>3 tablespoons fish sauce</li>
+                                    <li>1/4 teaspoon ground black pepper</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tinola End -->
+    <!-- Modal Search -->
+
+    <div class="modal fade" id="Testing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Results</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Search Results about Filipino Dishes</h2> <br>
+                    <ul>
+                        <a href="Project1Results.html" target="_blank">
+                            <li>Adobo</li>
+                        </a>
+                        <br>
+                        <a href="Project1Results2.html" target="_blank">
+                            <li>Lumpiang Shanghai</li>
+                        </a>
+                        <br>
+                        <a href="Project1Results3.html" target="_blank">
+                            <li>Chicken Inasal</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search End  -->
+
+    <footer class="d-flex justify-content-center" aria-label="Page navigation example">
+        <ul class="pagination pagination-lg">
+            <li class="page-item">
+                <a class="page-link" href="Project1recipe.html" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="Project1recipe.html">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#top">2</a></li>
+            <li class="page-item"><a class="page-link" href="Project1recipepg3.html">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="Project1recipepg3.html" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+          <p class="text-white pt-3">2022 Project</p>
+          <div class="d-flex justify-content-evenly pb-3">
+          <a href="https://www.facebook.com/KodegoPH" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a href="https://kodego.ph" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+        </div>
+        </div>
+      </footer>
+
+    <!--End update Modal Code (Updated Nov 17- 3:07 PM -Zafe)-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Project1.css">
+  <title>Project 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b7d9f60278.js" crossorigin="anonymous"></script>
+
+  <style>
+
+    body {
+      background: lightcyan;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .carousel-item {
+      height: 100vh;
+      min-height: 300px;
+    }
+
+    .carousel-caption {
+      bottom: 220px;
+      z-index: 2;
+    }
+
+    .carousel-caption h5 {
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+    }
+
+    .carousel-inner:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    .w-100 {
+      height: 100vh;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: lightcyan">
+    <div class="container">
+      <a class="navbar-brand" href="#top">KusinaFilipino</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Project1recipe.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Project1contactus.html">About Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://www.vacationhive.com/wp-content/uploads/2021/04/authentic-filipino-food-fb-banner.png"
+          class="d-block w-100"
+          alt="https://www.vacationhive.com/wp-content/uploads/2021/04/authentic-filipino-food-fb-banner.png">
+        <div class="carousel-caption">
+          <h5>Kusina Filipino</h5>
+          <p>We Serve Passion and Dedication</p>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#Testing">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://images.tpn.to/kk/fn/hl/ej/content.png" class="d-block w-100"
+          alt="https://www.vacationhive.com/wp-content/uploads/2021/04/authentic-filipino-food-fb-banner.png">
+        <div class="carousel-caption">
+          <h5>Kusina Filipino</h5>
+          <p>The Flavors of Tradition</p>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#Testing">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.tasteatlas.com/images/dishes/4f8fa81ab1a5429c849fca30a7aa786c.jpg" class="d-block w-100"
+          alt="https://www.vacationhive.com/wp-content/uploads/2021/04/authentic-filipino-food-fb-banner.png">
+        <div class="carousel-caption">
+          <h5>Kusina Filipino</h5>
+          <p>The Flavors of Nature</p>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#Testing">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Modal Testing Search-->
+
+  <div class="modal fade" id="Testing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Results</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2>Search Results about Filipino Dishes</h2> <br>
+          <ul>
+            <a href="Project1Results.html" target="_blank"><li>Adobo</li></a>
+            <br>
+            <a href="Project1Results2.html" target="_blank"><li>Lumpiang Shanghai</li></a>
+            <br>
+            <a href="Project1Results3.html" target="_blank"><li>Chicken Inasal</li></a>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Testing End  -->
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="about-img">
+            <img src="https://images.deliveryhero.io/image/foodpanda/recipes/sinigang-na-baboy-recipe-1.jpg" alt=""
+              class="img-fluid">
+          </div>
+        </div>
+        <div class="col-sm-8 ps-lg-5 mt-md-5">
+          <div>
+            <h2>Our Goal</h2>
+            <p>We want to harness the power of food to improve the quality of life for everyone, now and in the future.
+              Explore our collection of Filipino favorites that will make any Pinoy yearn for mom's home-cooked meals.
+            </p>
+            <a href="Project1recipe.html"><button type="button" class="btn btn-info">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="bg-dark p-2 text-center">
+    <div class="container">
+      <p class="text-white pt-3">2022 Project</p>
+      <div class="d-flex justify-content-evenly pb-3">
+      <a href="https://www.facebook.com/KodegoPH" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+      <a href="https://kodego.ph" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+   
+
+
+</body>
+
+</html>

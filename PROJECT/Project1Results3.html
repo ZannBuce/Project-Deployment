@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+
+    <link rel="stylesheet" href="Project1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b7d9f60278.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+
+            background-color: lightcyan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: lightcyan">
+        <div class="container">
+            <a class="navbar-brand" href="Project1.html">KusinaFilipino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Project1recipe.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Project1contactus.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Testing">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="about-img d-none d-sm-block">
+                        <img src="https://recipes.net/wp-content/uploads/2021/11/chicken-inasal-recipe.jpg" alt=""
+                            class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div>
+                        <h2>Chicken Inasal</h2>
+                        <p>Filipino chicken dish known as lechon manok. Chicken Inasal is a grilled chicken dish and one
+                            of the well known Ilonggo dishes. It is served with rice, calamansi, soy sauce, chicken oil
+                            and vinegar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container pt-3 mt-3">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>In a freezer bag or large bowl, combine chicken, lemongrass,
+                            salt, ground black pepper, ginger, garlic, brown sugar, vinegar,
+                            lemon-lime soda, and lemon juice.</li>
+                        <li>Stir or shake the mixture until every ingredient is well
+                            incorporated. Marinade for 1 to 3 hours.</li>
+                        <li>In a bowl, combine margarine, annatto oil, salt, and lemon juice
+                            then stir. Set aside.</li>
+                        <li>Grill the chicken while basting generous amount of the margarine
+                            mixture.</li>
+                        <li>Transfer the grilled chicken to a serving plate.</li>
+                        <li>Serve with sinamak. Share and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 lbs chicken cut into serving pieces</li>
+                    <li>2 tablespoons ginger minced</li>
+                    <li>2 tablespoons garlic minced</li>
+                    <li>3/4 cup lemongrass chopped</li>
+                    <li>1 cup coconut vinegar</li>
+                    <li>1/2 cup lemon or calamansi juice</li>
+                    <li>1 tablespoon salt</li>
+                    <li>1/4 cup brown sugar</li>
+                    <li>1 cup lemon soda softdrink</li>
+                    <li>1/2 tablespoon ground black pepper</li>
+                    <li>Basting Sauce</li>
+                    <li>3 tablespoons annatto oil atsuete oil</li>
+                    <li>1/2 cup margarine softened</li>
+                    <li>1/4 teaspoon salt</li>
+                    <li>1 teaspoon lemon or calamansi juice</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search -->
+
+    <div class="modal fade" id="Testing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Results</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Search Results about Filipino Dishes</h2> <br>
+                    <ul>
+                        <a href="Project1Results.html" target="_blank">
+                            <li>Adobo</li>
+                        </a>
+                        <br>
+                        <a href="Project1Results2.html" target="_blank">
+                            <li>Lumpiang Shanghai</li>
+                        </a>
+                        <br>
+                        <a href="Project1Results3.html" target="_blank">
+                            <li>Chicken Inasal</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search End  -->
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+          <p class="text-white pt-3">2022 Project</p>
+          <div class="d-flex justify-content-evenly pb-3">
+          <a href="https://www.facebook.com/KodegoPH" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a href="https://kodego.ph" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+        </div>
+        </div>
+      </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

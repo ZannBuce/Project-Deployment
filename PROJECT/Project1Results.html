@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+
+    <link rel="stylesheet" href="Project1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b7d9f60278.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+
+            background-color: lightcyan;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: lightcyan">
+        <div class="container">
+            <a class="navbar-brand" href="Project1.html">KusinaFilipino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Project1recipe.html">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Project1contactus.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#Testing">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="about-img d-none d-sm-block">
+                        <img src="http://images.summitmedia-digital.com/yummyph/images/2019/10/15/RESIZED_0021_A_KNORR_0078.jpg"
+                            alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div>
+                        <h2>Adobo</h2>
+                        <p>Philippine adobo is a popular Filipino dish and cooking process in
+                            Philippine cuisine that involves meat, seafood, or vegetables marinated in vinegar, soy
+                            sauce, garlic, bay leaves, and black peppercorns, which is browned in oil, and simmered
+                            in the marinade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container pt-3 mt-3">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2>Instructions</h2>
+                    <ol>
+                        <li>Combine the pork belly, soy sauce, and garlic then marinade for at least
+                            1 hour</li>
+                        <li>Heat the pot and put-in the marinated pork belly then cook for a few
+                            minutes</li>
+                        <li>Pour remaining marinade including garlic.</li>
+                        <li>Add water, whole pepper corn, and dried bay leaves then bring to a boil.
+                            Simmer for 40 minutes to 1 hour</li>
+                        <li>Put-in the vinegar and simmer for 12 to 15 minutes</li>
+                        <li>Add salt to taste</li>
+                        <li>Serve hot. Share and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-12">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 lbs pork belly</li>
+                    <li>2 tablespoons garlic minced or crushed</li>
+                    <li>5 dried bay leaves</li>
+                    <li>4 tablespoons vinegar</li>
+                    <li>1/2 cup soy sauce</li>
+                    <li>1 tablespoon peppercorn</li>
+                    <li>Coffee</li>
+                    <li>2 cups water</li>
+                    <li>Salt to taste</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search -->
+
+    <div class="modal fade" id="Testing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Results</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>Search Results about Filipino Dishes</h2> <br>
+                    <ul>
+                        <a href="Project1Results.html" target="_blank">
+                            <li>Adobo</li>
+                        </a>
+                        <br>
+                        <a href="Project1Results2.html" target="_blank">
+                            <li>Lumpiang Shanghai</li>
+                        </a>
+                        <br>
+                        <a href="Project1Results3.html" target="_blank">
+                            <li>Chicken Inasal</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search End  -->
+
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+          <p class="text-white pt-3">2022 Project</p>
+          <div class="d-flex justify-content-evenly pb-3">
+          <a href="https://www.facebook.com/KodegoPH" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a href="https://kodego.ph" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+        </div>
+        </div>
+      </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
